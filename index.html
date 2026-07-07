@@ -10,7 +10,7 @@
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
-<title>Chấm Công GPS</title>
+<title>Chấm Công Nội Bộ</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
@@ -253,7 +253,7 @@ function route(){
    ============================================================ */
 function renderNotConfigured(){
   APP.innerHTML=`
-  <div class="topbar"><div class="co">Chấm Công GPS<small>Chưa cấu hình</small></div></div>
+  <div class="topbar"><div class="co">Chấm Công Nội Bộ<small>Chưa cấu hình</small></div></div>
   <main>
     <div class="card">
       <div class="eyebrow">Bước 1 · Kết nối Firebase</div>
@@ -274,7 +274,7 @@ function renderNotConfigured(){
    ============================================================ */
 function renderFirstSetup(){
   APP.innerHTML=`
-  <div class="topbar"><div class="co">Chấm Công GPS<small>Thiết lập lần đầu</small></div></div>
+  <div class="topbar"><div class="co">Chấm Công Nội Bộ<small>Thiết lập lần đầu</small></div></div>
   <main>
     <div class="card">
       <div class="eyebrow">Tạo công ty</div>
@@ -336,7 +336,7 @@ function geoErr(err){
 function renderLogin(){
   const emps=Object.entries(state.employees).filter(([,e])=>e.active!==false);
   APP.innerHTML=`
-  <div class="topbar"><div class="co">${state.config.company}<small>Chấm công GPS</small></div></div>
+  <div class="topbar"><div class="co">${state.config.company}<small>Chấm công Nội Bộ</small></div></div>
   <main>
     <div class="card">
       <div class="seg"><button id="tab_nv" class="active">Nhân viên</button><button id="tab_ql">Quản lý</button></div>
